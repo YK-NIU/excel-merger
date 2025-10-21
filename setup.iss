@@ -3,7 +3,7 @@
 #define MyAppNameEn "Little Beaver Table Merger"
 #define MyAppVersion "1.0.1"
 #define MyAppPublisher "小河狸工作室"
-#define MyAppExeName "小河狸表格合并器.exe"
+#define MyAppExeName "小河狸表格合并器安装程序.exe"
 
 [Setup]
 AppId={{C9F8A741-0A6F-4847-96E9-6F5E7C24C557}
@@ -28,7 +28,7 @@ Name: "en"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: checkedonce
 
 [Files]
-Source: "dist\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
 Name: "{group}\{code:GetAppName}"; Filename: "{app}\{#MyAppExeName}"
@@ -68,3 +68,4 @@ begin
   else
     Result := '{#MyAppName}';
 end;
+
